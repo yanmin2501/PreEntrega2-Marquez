@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:ital,wght@0,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Comienza Css del INICIO */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.menu {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: smaller;
+    letter-spacing: 3px;
+}
+
+.menu li {
+    display: inline;
+    margin-inline: 30px;
+}
+
+.menu li a {
+    color: rgb(23, 7, 7);
+    text-decoration: none;
+}
+
+.inicio {
+    min-height: 100vh;
+    background-image: url(../Assets/Fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.inicio::before {
+    content: "";
+    width: 70%;
+    height: 50%;
+    background-color: rgb(47, 47, 47);
+    position: absolute;
+    opacity: 0.6;
+    display:grid
+
+}
+
+.inicio h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250%;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 8px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.inicio p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    font-size: 150%;
+    color: white;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* CSS Footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+} 
+/* .footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 110px;
+} */
+
+
+.colum h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    color: rgb(23, 7, 7);
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 5px;
+}
+
+.colum p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+/* CSS Footer */
+/* Finaliza CSS del INICIO */
+
+/* Comienza CSS de seccion CARTA */
+.fondo-carta {
+    min-height: 100vh;
+    background-image: url(../Assets/croissants-g063595cd1_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.fondo-carta h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 8px;
+    position: relative;
+    margin-right: 90px;
+}
+
+.carta h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.carta p{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    font-size: small;
+    color: black;
+    text-align: center;
+    margin: 5px 10px 5px 10px;
+}
+.carta {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 30px;
+    gap: 3em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(129, 128, 128, 0.5);
+    padding: 10px;
+}
+
+
+.card img {
+    border-radius: 3px;
+    margin: 20px 0 20px 0
+}
+
+/* Finaliza CSS seccion CARTA */
+
+/* Comienza CSS de seccion RESERVAS */
+.reservas {
+    background-image: url(../Assets/Inicio.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.reservas label {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(23, 7, 7);
+}
+
+.reservas input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+    font-weight: bolder;
+    color: black;
+}
+
+/* Finaliza CSS seccion RESERVAS */
+
+/* CSS seccion NOSOTROS */
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    padding: 40px;
+    padding-top:10px ;
+}
+
+.texto{
+    text-align:left;
+    display: block;
+    margin: auto;
+    padding: 40px;
+
+}
+.img img{
+    border-radius: 5%;
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+}
+
+/*  Fin CSS seccion NOSOTROS */
+
+/* CSS de cosas más generales */
+
+.subtitulos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(23, 7, 7);
+    margin: 50px;
+}
+
+.texto {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+}
+
+.sub-subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(23, 7, 7);
+}
+
+/* CSS de cosas mas generales */
+
+
+
+/* MOBILE */
+@media screen and (max-width:480px) {
+
+    .menu{
+        font-size:x-small;
+    }
+    .menu li {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer div img{
+        width: 18px;
+    }
+    .colum{
+        margin: 15px;
+    }
+    
+    .colum h3 {
+        font-size: x-small;
+    }
+    
+    .colum p {
+        font-size: small;
+    }
+    
+    .inicio::before {
+        content: "";
+        width: 80%;
+        height: 50%;
+        background-color: rgb(47, 47, 47);
+        position: absolute;
+        opacity: 0.6;
+    }
+
+    .inicio h2 {
+        font-size: 170%;
+        text-align:center;
+    }
+    
+    .inicio p {
+        font-size: 100%;
+        margin: 15px;
+    }
+
+    .contenido-nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .texto{
+        text-align:center;
+        display: block;
+        margin: auto ;
+        font-size:small;
+    }
+    .img img{
+        width: 350px;
+    }
+}
+
+/* MOBILE */
+
+/* TABLET */
+@media screen and (max-width:880px){
+    .menu li {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .inicio h2 {
+        text-align:center;
+    }
+    
+    .inicio p {
+        font-size: 150%;
+        margin: 15px;
+    }
+
+    .contenido-nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .texto{
+        text-align:center;
+        margin: 30px ;
+        font-size: large;
+    }
+    .img img{
+        width: 400px;
+    }
+}
